@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+body {
+  background-color: #e1e2e36b;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.layout {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  padding: 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.layout ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 0.8em;
+  margin: 0;
+  position: relative;
+  box-shadow: 0 2px 3px -2px #000;
+}
+
+.layout a {
+  padding: 0.8em;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #e1e2e36b;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 1em;
+  box-shadow: 0 2px 3px -2px #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+i {
+  color: rgb(20, 22, 17);
+}
+
+.title p,
+.title i {
+  padding: 0;
+  margin: 0;
+}
+
+.sub-title {
+  font-weight: 300;
+  color: dimgray;
+  font-size: 16px;
+  padding: 0.7em 1em;
+  margin: 0;
+  box-shadow: 0 2px 3px -2px #000;
+}
