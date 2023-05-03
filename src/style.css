@@ -7,7 +7,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.todo-container {
+#todo-container {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7em 0.8em;
+  padding: 0.7em  0.8em;
   margin: 0;
   position: relative;
   box-shadow: 0 2px 3px -2px #000;
@@ -72,11 +72,33 @@ i {
   margin: 0;
 }
 
-.sub-title {
-  font-weight: 300;
-  color: dimgray;
-  font-size: 16px;
-  padding: 0.7em 1em;
-  margin: 0;
+#input-box {
+  flex: 1;
+  width: 330px;
+  height: 10px;
+  border: none;
+  padding: 1em 1em;
+  margin-top: 1px;
   box-shadow: 0 2px 3px -2px #000;
+  font-style: italic;
+  font-size: 1em;
+  outline: none;
+}
+
+.description {
+  position: absolute;
+  border: none;
+  left: 3em;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#todo-form {
+  box-shadow: 0 2px 3px -2px #000;
+}
+
+#todo-form button {
+  background-color: #ffff;
+  border: none;
 }

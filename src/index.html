@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List</title>
-    <script src="https://kit.fontawesome.com/7415ea4535.js" crossorigin="anonymous"></script>
+    <title>To Do List</title>
+    <script src="https://kit.fontawesome.com/596c80ab52.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="todo-container">
+    <div id="todo-container">
         <div class="layout">
-            <div class="title"> <p>Today`s To Do</p> <i class="fa-solid fa-rotate"></i> </div>
-            <div class="sub-title"><em> Add to your list... </em></div>
-            <ul id="lists"></ul>
-            <a href="">Clear all completed</a>
+            <div class="title"> <p>Today's To Do</p> <i class="fa-solid fa-rotate"></i> </div>
+            <form id="todo-form">
+                 <input type="text" id="input-box" placeholder="Add to your list..." required> 
+                 <button type="submit"><i class="fa-sharp fa-solid fa-right-to-bracket"></i></button>
+            </form>        
+            <ul  class="lists" id="lists">
+            </ul>
+            <a href="" id="clearall">Clear all completed</a>
         </div>
-    </div>
-    
-  
+    </div> 
 </body>
 </html>
