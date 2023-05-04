@@ -46,7 +46,6 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -83,11 +82,12 @@ After you're finished please remove all the comments and instructions!
 
 
 - **[Display a list of To Do tasks.]**
+- **[add & remove]**
+- **[interactive list]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -135,7 +135,6 @@ To run the project, execute the following command:
 
 ### Deployment
 
-You can deploy this project using:
 
 You can deploy this project using:
 - Free deployment services like GitHub pages.
@@ -161,8 +160,8 @@ You can deploy this project using:
 
 
 
-- [ ] **[add & remove]**
-- [ ] **[interactive list]**
+- [ ] **[Add more style to the UI]**
+
 
 
 
