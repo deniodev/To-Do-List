@@ -41,13 +41,11 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -59,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome Books] <a name="about-project"></a>
+# 📖 [To-Do List] <a name="about-project"></a>
 
 **[To-Do List]** is  a simple HTML list of To Do tasks.
 
@@ -84,17 +82,13 @@ After you're finished please remove all the comments and instructions!
 
 
 - **[Display a list of To Do tasks.]**
+- **[add & remove]**
+- **[interactive list]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-
-- [Live Demo Link](https://deniodev.github.io/To-Do-List/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,7 +135,6 @@ To run the project, execute the following command:
 
 ### Deployment
 
-You can deploy this project using:
 
 You can deploy this project using:
 - Free deployment services like GitHub pages.
@@ -167,8 +160,8 @@ You can deploy this project using:
 
 
 
-- [ ] **[add & remove]**
-- [ ] **[interactive list]**
+- [ ] **[Add more style to the UI]**
+
 
 
 
