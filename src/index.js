@@ -1,6 +1,14 @@
 import './style.css';
-import { tasks } from './modules/tasks.js';
+import clearAll from './modules/clear.js';
+import { task } from './modules/tasks.js';
 
-tasks.input();
-tasks.render();
-tasks.update();
+task.input();
+task.render();
+task.update();
+
+// Event listener on the "clearall" button.
+const clear = document.getElementById('clearall');
+clear.addEventListener('click', (e) => {
+  e.preventDefault();
+  clearAll();
+});
