@@ -1,4 +1,5 @@
 import Todos from './todos.js';
+import complete from './complete.js';
 
 export default class Tasks {
   // Initializes an empty array called "todoList" when a new instance of "Tasks" is created.
@@ -58,7 +59,7 @@ export default class Tasks {
 
         const input = document.createElement('input');
         input.setAttribute('type', 'checkbox');
-        input.onchange = () => this.complete(id);
+        input.onchange = () => complete(id);
         input.checked = completedTask;
         li.appendChild(input);
 
@@ -111,21 +112,6 @@ export default class Tasks {
           localStorage.setItem('tasks', JSON.stringify(this.todoList));
         });
       });
-    };
-
-    /* Updates the "completed" status of a task in the "todoList" array based on its index.
-     Then, update local storage. */
-    complete = (id) => {
-      this.todoList.forEach((item) => {
-        if (item.index - 1 === id) {
-          if (item.completed === false) {
-            item.completed = true;
-          } else {
-            item.completed = false;
-          }
-        }
-      });
-      localStorage.setItem('tasks', JSON.stringify(this.todoList));
     };
 }
 

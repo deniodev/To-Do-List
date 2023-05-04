@@ -3,7 +3,8 @@ import { task } from './tasks.js';
 /* Clear all completed tasks from the todoList array, update their indexes
 and store the updated list in the localStorage. */
 const clearAll = () => {
-  let incomplete = task.todoList.filter((item) => {
+  const i = JSON.parse(localStorage.getItem('tasks'));
+  let incomplete = i.filter((item) => {
     if (item.completed !== true) {
       return item;
     } return null;
