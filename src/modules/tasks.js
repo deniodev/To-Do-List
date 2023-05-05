@@ -59,6 +59,7 @@ export default class Tasks {
 
         const input = document.createElement('input');
         input.setAttribute('type', 'checkbox');
+        input.setAttribute('id', 'checkbox');
         input.onchange = () => complete(id);
         input.checked = completedTask;
         li.appendChild(input);
@@ -71,7 +72,7 @@ export default class Tasks {
         li.appendChild(inputs);
 
         const remove = document.createElement('i');
-        remove.setAttribute('class', 'fa-solid fa-trash');
+        remove.setAttribute('class', 'fa fa-remove');
         remove.onclick = () => this.removes(id);
         li.appendChild(remove);
 
