@@ -1,1 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Webpack Exercise</title><script defer="defer" src="index.bundle.js"></script></head><body><h1>Hello Webpack!</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://kit.fontawesome.com/596c80ab52.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+<script defer src="index.bundle.js"></script></head>
+<body>
+    <div id="todo-container">
+        <div class="layout">
+            <div class="title"> <p>Today's To Do</p> <i class="fa fa-list-alt" aria-hidden="true"></i></div>
+            <form id="todo-form">
+                 <input type="text" id="input-box" placeholder="Add to your list..." required> 
+                 <button type="submit"><i class="fa-sharp fa-solid fa-right-to-bracket"></i></button>
+            </form>        
+            <ul  class="lists" id="lists">
+            </ul>
+            <a href="" id="clearall">Clear all completed</a>
+        </div>
+    </div> 
+</body>
+</html>
