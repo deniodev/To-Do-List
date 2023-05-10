@@ -139,6 +139,11 @@ To run the project, execute the following command:
 
 -Run the index.html with your preferred browser.
 
+### Run Tests
+
+To run the tests, execute the following command: <br>
+npm test
+
 ### Deployment
 
 
@@ -157,6 +162,12 @@ You can deploy this project using:
 - GitHub: [@githubhandle](https://github.com/deniodev)
 - Twitter: [@twitterhandle](https://twitter.com/DNhanale)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/denionhanale/)
+
+👤 **Tumanini Maganiko**
+
+- GitHub: [@githubhandle](https://github.com/tumainimaganiko)
+- Twitter: [@twitterhandle](https://twitter.com/Chief2maini)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tumaini-maganiko-991b30262/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
