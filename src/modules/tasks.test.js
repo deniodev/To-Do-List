@@ -16,17 +16,27 @@ document.body.innerHTML = `<div id="todo-container">
     <a href="" id="clearall">Clear all completed</a>
 </div>
 </div>`;
+
 describe('adding items', () => {
-    test('adding item 1', () => {
-        document.querySelector('#input-box').value = 'test 1';
-        task.newTask();
-        const fieldList = document.querySelectorAll('li');
-        expect(fieldList).toHaveLength(1);
-    });
-    test('adding item 2', () => {
-        document.querySelector('#input-box').value = 'test 2';
-        task.newTask();
-        const fieldList = document.querySelectorAll('li');
-        expect(fieldList).toHaveLength(2);
-    });
+  test('adding item 1', () => {
+    document.querySelector('#input-box').value = 'test 1';
+    task.newTask();
+    const fieldList = document.querySelectorAll('li');
+    expect(fieldList).toHaveLength(1);
+  });
+
+  test('adding item 2', () => {
+    document.querySelector('#input-box').value = 'test 2';
+    task.newTask();
+    const fieldList = document.querySelectorAll('li');
+    expect(fieldList).toHaveLength(2);
+  });
+});
+
+describe('delete items', () => {
+  test('remove item', () => {
+    task.removes();
+    const fieldList = document.querySelectorAll('li');
+    expect(fieldList).toHaveLength(1);
+  });
 });
