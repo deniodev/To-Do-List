@@ -6,19 +6,8 @@ import { task } from './tasks.js';
 import complete from './complete.js';
 import clearAll from './clear.js';
 
-document.body.innerHTML = `<div id="todo-container">
-<div class="layout">
-    <div class="title"> <p>Today's To Do</p> <i class='fa fa-calendar-check-o fa-2x'></i></div>
-    <form id="todo-form">
-         <input type="text" id="input-box" placeholder="Add to your list..." required>
-         <button type="submit"><i class='fa fa-angle-double-right fa-lg'></i></button>
-    </form>
-    <ul  class="lists" id="lists">
-    </ul>
-    <a href="" id="clearall">Clear all completed</a>
-</div>
-</div>`;
 
+// Testing the adding function
 describe('adding items', () => {
   test('adding item 1', () => {
     document.querySelector('#input-box').value = 'test 1';
@@ -34,7 +23,7 @@ describe('adding items', () => {
     expect(fieldList).toHaveLength(2);
   });
 });
-
+// testing the Removing function
 describe('delete items', () => {
   test('remove item', () => {
     task.removes();
@@ -43,6 +32,7 @@ describe('delete items', () => {
   });
 });
 
+// testing the function to edit tasks
 describe('edit items', () => {
   test('edit item at id-0 to workout', () => {
     task.update();
@@ -54,6 +44,7 @@ describe('edit items', () => {
   });
 });
 
+// Testing the  check completed tasks
 describe('check item as completed', () => {
   test('turn item at index 0 to true', () => {
     complete(0);
@@ -65,6 +56,7 @@ describe('check item as completed', () => {
   });
 });
 
+// Testing the function to clear tasks
 describe('clear all completed', () => {
   test('Remove all checked items', () => {
     clearAll();
@@ -75,3 +67,16 @@ describe('clear all completed', () => {
     expect(clearAllCompleted).toHaveLength(0);
   });
 });
+
+document.body.innerHTML = `<div id="todo-container">
+<div class="layout">
+    <div class="title"> <p>Today's To Do</p> <i class='fa fa-calendar-check-o fa-2x'></i></div>
+    <form id="todo-form">
+         <input type="text" id="input-box" placeholder="Add to your list..." required>
+         <button type="submit"><i class='fa fa-angle-double-right fa-lg'></i></button>
+    </form>
+    <ul  class="lists" id="lists">
+    </ul>
+    <a href="" id="clearall">Clear all completed</a>
+</div>
+</div>`;
