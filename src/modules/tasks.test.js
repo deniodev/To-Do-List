@@ -3,6 +3,8 @@
  */
 
 import { task } from './tasks.js';
+import complete from './complete.js';
+import clearAll from './clear.js';
 
 document.body.innerHTML = `<div id="todo-container">
 <div class="layout">
@@ -38,5 +40,38 @@ describe('delete items', () => {
     task.removes();
     const fieldList = document.querySelectorAll('li');
     expect(fieldList).toHaveLength(1);
+  });
+});
+
+describe('edit items', () => {
+  test('edit item at id-0 to workout', () => {
+    task.update();
+
+    let d = document.querySelector('#input-0').value;
+    d = 'workout';
+
+    expect(d).toBe('workout');
+  });
+});
+
+describe('check item as completed', () => {
+  test('turn item at index 0 to true', () => {
+    complete(0);
+
+    let checkItem1 = document.getElementById(0).checked;
+    checkItem1 = true;
+
+    expect(checkItem1).toBeTruthy();
+  });
+});
+
+describe('clear all completed', () => {
+  test('Remove all checked items', () => {
+    clearAll();
+
+    const i = JSON.parse(localStorage.getItem('tasks'));
+    const clearAllCompleted = i.filter((item) => item.completed !== true);
+
+    expect(clearAllCompleted).toHaveLength(0);
   });
 });
