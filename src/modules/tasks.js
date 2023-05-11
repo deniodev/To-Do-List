@@ -104,13 +104,14 @@ export default class Tasks {
       d.forEach((descript) => {
         descript.addEventListener('input', (e) => {
           const inp = e.target.parentElement.id;
-          this.todoList.forEach((item, id) => {
+          const todo = JSON.parse(localStorage.getItem('tasks'));
+          todo.forEach((item, id) => {
             if (id.toString() === inp) {
               item.description = e.target.value;
             }
           });
 
-          localStorage.setItem('tasks', JSON.stringify(this.todoList));
+          localStorage.setItem('tasks', JSON.stringify(todo));
         });
       });
     };
